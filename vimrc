@@ -17,6 +17,8 @@ let so=10
 let $LANG='en'
 set langmenu=en
 
+colorscheme pablo
+
 " super cool auto-complete menu
 set wildmenu
 
@@ -120,7 +122,7 @@ set laststatus=2
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
-hi StatusLine ctermbg=green ctermfg=black
+hi StatusLine ctermbg=black ctermfg=green
 
 
 """"""""""""""""

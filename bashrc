@@ -49,7 +49,7 @@ function parse_git_dirty {
 		bits="!${bits}"
 	fi
 	if [ ! "${bits}" == "" ]; then
-		echo " ${bits}"
+		echo -e " \e[1;31m${bits}\e[m\e[31m"
 	else
 		echo ""
 	fi
@@ -60,3 +60,5 @@ export PS1="+--\[\e[35m\]\u\[\e[m\]:\[\e[36m\]\h\[\e[m\]\\n|\[\e[33m\]\\w\[\e[m\
 # Aliases
 #
 alias ls='ls --color=auto'
+alias ll='ls -Al'
+alias l='ls --color=auto -Alghi'
